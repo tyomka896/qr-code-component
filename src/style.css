@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass&display=swap");
+
+@import "tailwindcss";
+
+:root {
+    --white: hsl(0, 0%, 100%);
+
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+}
+
+@theme {
+    --color-white: var(--white);
+    --color-slate-300: var(--slate-300);
+    --color-slate-500: var(--slate-500);
+    --color-slate-900: var(--slate-900);
+
+    --font-base: "Outfit", sans-serif;
+}
+
+@layer base {
+    html {
+        @apply font-base bg-slate-300 text-[15px];
+    }
+}
